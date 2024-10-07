@@ -4,6 +4,14 @@
 int main()
 {
 #ifdef _DEBUG
+
+	board myBoard;
+	myBoard.generate();
+	myBoard.draw();
+	
+	
+
+
 	_CrtDumpMemoryLeaks();
 #endif
 

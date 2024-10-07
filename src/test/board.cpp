@@ -30,20 +30,25 @@ void board::draw()
             {
                 std::cout << ". ";  // Case vide
             }
-            int piece = Board[row][col]->type;
-
-            switch (piece)
+            
+            else
             {
-            case 0:
-                std::cout << "P ";  // Pion blanc
-                break;
-            case 1:
-                std::cout << "p ";  // Pion noir
-                break;
-            default:
-                std::cout << "? "; // Caractère de remplacement
-                break;
+                int piece = Board[row][col]->type;
+
+                switch (piece)
+                {
+                case 0:
+                    std::cout << "P ";  // Pion blanc
+                    break;
+                case 1:
+                    std::cout << "p ";  // Pion noir
+                    break;
+                default:
+                    std::cout << "? "; // Caractère de remplacement
+                    break;
+                }
             }
+            
         }
         std::cout << std::endl; // Nouvelle ligne pour chaque rangée
     }

@@ -1,5 +1,4 @@
-
-#include "pch.h"
+#pragma once 
 #include <Windows.h>
 #include "piece.h"
 #include <iostream>
@@ -8,10 +7,13 @@
 class board
 {
 private:
-	board();
-	void generate();
+
+	
 
 public:
+	board();
+	//~board();
+	void generate();
 	int Width;
 	int Height;
 	piece* Board [8][8];

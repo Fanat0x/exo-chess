@@ -1,5 +1,6 @@
-#include "piece.h"
 #include "pch.h"
+#include "piece.h"
+
 
 piece::piece()
 {
