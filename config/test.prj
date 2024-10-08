@@ -19,7 +19,7 @@
             "platform_toolset": "v143",
             "precompiled_header": "Use",
             "precompiled_header_file": "pch.h",
-            "preprocessor_definitions": "_DEBUG;_CONSOLE;%(PreprocessorDefinitions)",
+            "preprocessor_definitions": "_DEBUG;_LOG;_CONSOLE;%(PreprocessorDefinitions)",
             "sdl_check": "true",
             "subsystem": "Console",
             "type": "Application",
@@ -46,6 +46,51 @@
             "type": "Application",
             "use_debug_libraries": "false",
             "warning_level": "Level3"
+        },
+
+	{
+            "additional_dependencies": "%(AdditionalDependencies)",
+            "additional_include_directories": "",
+            "additional_library_directories": "",
+            "character_set": "Unicode",
+            "conformance_mode": "true",
+            "generate_debug_information": "false",
+            "int_dir": "$(ProjectDir)Build\\$(Configuration)\\intermediate\\",
+            "language_standard": "stdcpp20",
+            "name": "Lite|x64",
+            "out_dir": "$(ProjectDir)Build\\$(Configuration)\\",
+            "platform_toolset": "v143",
+            "precompiled_header": "Use",
+            "precompiled_header_file": "pch.h",
+            "preprocessor_definitions": "NDEBUG;_LITE;_CONSOLE;%(PreprocessorDefinitions)",
+            "sdl_check": "true",
+            "subsystem": "Console",
+            "type": "Application",
+            "use_debug_libraries": "false",
+            "warning_level": "Level3"
+        },
+
+	{
+            "additional_dependencies": "%(AdditionalDependencies)",
+            "additional_include_directories": "",
+            "additional_library_directories": "",
+            "character_set": "Unicode",
+            "conformance_mode": "true",
+            "generate_debug_information": "false",
+            "int_dir": "$(ProjectDir)Build\\$(Configuration)\\intermediate\\",
+            "language_standard": "stdcpp20",
+            "name": "Demo|x64",
+            "out_dir": "$(ProjectDir)Build\\$(Configuration)\\",
+            "platform_toolset": "v143",
+            "precompiled_header": "Use",
+            "precompiled_header_file": "pch.h",
+            "preprocessor_definitions": "NDEBUG;_DEMO;_CONSOLE;%(PreprocessorDefinitions)",
+            "sdl_check": "true",
+            "subsystem": "Console",
+            "type": "Application",
+            "use_debug_libraries": "false",
+            "warning_level": "Level3"
         }
+
     ]
 }

@@ -14,6 +14,7 @@ public:
 	board();
 	//~board();
 	void generate();
+	void move(int oldX, int oldY, int NewX, int NewY);
 	int Width;
 	int Height;
 	piece* Board [8][8];

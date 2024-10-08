@@ -19,37 +19,33 @@ void board::generate()
     }
 }
 
+
+void board::move(int oldX, int oldY, int NewX, int NewY)
+{
+    piece* Piece = Board[oldX][oldY];
+    Board[NewX][NewY] = Piece;
+    Board[oldX][oldY] = nullptr;
+}
+
 void board::draw()
 {
+    // Dessiner le tableau
     for (int row = 0; row < Height; row++)
     {
         for (int col = 0; col < Width; col++)
         {
-
             if (Board[row][col] == nullptr)
             {
                 std::cout << ". ";  // Case vide
             }
-            
             else
             {
-                int piece = Board[row][col]->type;
-
-                switch (piece)
-                {
-                case 0:
-                    std::cout << "P ";  // Pion blanc
-                    break;
-                case 1:
-                    std::cout << "p ";  // Pion noir
-                    break;
-                default:
-                    std::cout << "? "; // Caractère de remplacement
-                    break;
-                }
+                std::cout << Board[row][col]->Skin << " ";
             }
-            
         }
         std::cout << std::endl; // Nouvelle ligne pour chaque rangée
     }
+
+    // Ajouter la délimitation en dessous du tableau
+    std::cout << std::string(Width * 2, '-') << std::endl;
 }
